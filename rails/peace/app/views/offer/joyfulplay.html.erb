@@ -3,4 +3,16 @@
 <p><%= 1+1  %></p>
 <p><%= "Nam" + " " + "+" " " + "Laurie" + " " + "pour l'éternité" %></p>
 <p><%= @oneHour %></p>
+<p>Let's list the folders for fun <%= @listFolder %> </p>
+
+<%  ##### Listing files in an unordered list ###### %>
+<p>Let's list the folders like a list because it's a list yay !<br />
+  file name is : <ul>
+  <% for file in @listFolder %>
+  <li><%= file %></li>
+  <% end %>
+  </ul>
+</p>
+<%  ##### End of listing #####  %>
+
 <p>Try joy and happiness from now</p>

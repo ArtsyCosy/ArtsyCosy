@@ -8,5 +8,6 @@ class OfferController < ApplicationController
   end
   def joyfulplay
     @oneHour = 1.hour.from_now.localtime
+    @listFolder = Dir.glob('*')
   end
 end
